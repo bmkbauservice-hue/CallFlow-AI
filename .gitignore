@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+
+# Daten
+data/
+
+# n8n
+n8n/
+
+# Tests
+.pytest_cache/
+
+# Betriebssystem
+.DS_Store
