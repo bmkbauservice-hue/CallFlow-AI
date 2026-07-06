@@ -1,22 +1,16 @@
-from typing import Dict
+from agents.language_agent import LanguageAgent
 
 
 class AIBrain:
-    """
-    Zentrale Orchestrierung aller KI-Agenten.
-    """
 
     def __init__(self):
-        self.agents = {}
+        self.language_agent = LanguageAgent()
 
-    def register_agent(self, name: str, agent):
-        self.agents[name] = agent
+    def process(self, text: str):
 
-    def process(self, text: str) -> Dict:
+        language = self.language_agent.detect(text)
+
         return {
             "input": text,
-            "status": "received",
-            "registered_agents": list(self.agents.keys())
-        }
-
-        
+            "language": language
+        }   
