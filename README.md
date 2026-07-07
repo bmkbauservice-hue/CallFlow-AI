@@ -59,3 +59,7 @@ Version 0.1.0
 ## Roadmap
 
 siehe ROADMAP.md
+
+
+
+![Uploading Unbenannt-2026-04-27-0917.png…]()
